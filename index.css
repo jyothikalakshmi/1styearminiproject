@@ -1,0 +1,12 @@
+body{
+    margin:0px;
+}
+.title{
+    height: 100px;
+    width: 100%;
+    text-align: center;
+   color:black;
+   position:fixed;
+   font-size:60px;
+   background-color:green;
+}
