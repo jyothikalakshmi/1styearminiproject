@@ -1,8 +1,49 @@
 <html>
-    <link rel="stylesheet" href="index.css">
-    <body>
-        <div class="title">
-           waste management
-          
-        </div>
-        
+<link rel="stylesheet" href="index.css">
+<body>
+  <div class="title">
+    waste management
+  </div>
+  <div class="content">
+    <div class="tabs">
+
+      <div class="tab">
+        <button class="tabButton" onclick="openTab('home')" id="defaultTab">home</button>
+      </div>
+
+      <div class="tab">
+        <button class="tabButton" onclick="openTab('bookings')">bookings</button>
+      </div>
+      <div class="tab">
+        <button class="tabButton" onclick="openTab('myRequests')">myRequests</button>
+      </div>
+      <div class="tab">
+        <button class="tabButton" onclick="openTab('raiseComplaint')">raiseComplaint</button>
+      </div>
+      <div class="tab">
+        <button class="tabButton" onclick="openTab('aboutUs')">aboutUs</button>
+
+      </div>
+    </div>
+    <div class="tabContent">
+      <div id="home" class="tabContentDetails">
+        logo
+      </div>
+      <div id="bookings" class="tabContentDetails">
+        details
+      </div>
+      <div id="myRequests" class="tabContentDetails">
+        status
+      </div>
+      <div id="raiseComplaint" class="tabContentDetails">
+        complaints
+      </div>
+      <div id="aboutUs" class="tabContentDetails">
+        about us
+      </div>
+
+    </div>
+  </div>
+</body>
+<script src="index.js"></script>
+</html>

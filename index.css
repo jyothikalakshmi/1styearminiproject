@@ -1,12 +1,36 @@
-body{
-    margin:0px;
+body {
+  margin: 0px;
 }
-.title{
-    height: 100px;
-    width: 100%;
-    text-align: center;
-   color:black;
-   position:fixed;
-   font-size:60px;
-   background-color:green;
+
+.title {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  color: black;
+  position: fixed;
+  font-size: 60px;
+  background-color: green;
+}
+.content{
+ padding-top:100px;
+}
+.tabs{
+  display:flex;
+  flex-direction: column;
+  width:10%;
+}
+.tabcontent{
+  position:absolute;
+  left:10%;
+  top:100px;
+}
+.tab{
+  width:100%;
+  border-right:1px solid black;
+  border-bottom:1px solid black;
+  height:140px;
+}
+.tabButton{
+  height:100%;
+  width:100%;
 }
