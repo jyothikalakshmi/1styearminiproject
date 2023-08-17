@@ -9,7 +9,7 @@ body {
   color: black;
   position: fixed;
   font-size: 60px;
-  background-color: green;
+  background:linear-gradient(15deg,#13547a,#80d0c7);
   z-index: 1;
 }
 .tagline{
