@@ -3,26 +3,37 @@ body {
 }
 
 .title {
-  height: 100px;
+  height: 130px;
   width: 100%;
   text-align: center;
   color: black;
   position: fixed;
   font-size: 60px;
   background-color: green;
+  z-index: 1;
+}
+.tagline{
+  position: absolute;
+  left:60%;
+  font-size:30px;
 }
 .content{
- padding-top:100px;
+ padding-top:130px;
 }
 .tabs{
   display:flex;
   flex-direction: column;
   width:10%;
+  
 }
 .tabcontent{
   position:absolute;
   left:10%;
-  top:100px;
+  top:130px;
+}
+.tabContentDetails{
+  width:150%;
+  padding:64px;
 }
 .tab{
   width:100%;
@@ -33,4 +44,97 @@ body {
 .tabButton{
   height:100%;
   width:100%;
+}
+.name {
+  color: brown;
+  padding-top: 10px;
+  
+}
+.displayGrid{
+  display: grid;
+    grid-template-columns: 30% 70%;
+}
+.displayFlexSpaceBetween{
+  display: flex;
+  justify-content: space-between;
+}
+
+.date {
+  color: brown;
+  padding-top: 20px;
+}
+
+.time {
+  color: brown;
+  padding-top: 20px;
+}
+
+.address {
+  color: brown;
+  padding-top: 20px;
+}
+
+.number {
+  color: brown;
+  padding-top: 20px;
+
+}
+.wasteType{
+  color: brown;
+  padding-top: 20px;
+
+}
+
+.weight {
+  color: brown;
+  padding-top: 40px;
+}
+.buttons{
+  display:flex;
+  justify-content:space-evenly;
+  padding-top:20px;
+}/* The SUBMIT - position it at the bottom and in the middle of the screen */
+#SUBMIT {
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: #333; /* Black background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Centered text */
+  border-radius: 2px; /* Rounded borders */
+  padding: 16px; /* Padding */
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1; /* Add a z-index if needed */
+  left: 50%; /* Center the SUBMIT */
+  bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the SUBMIT when clicking on a button (class added with JavaScript) */
+#SUBMIT.show {
+  visibility: visible; /* Show the SUBMIT */
+  /* Add animation: Take 0.5 seconds to fade in and out the SUBMIT.
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the SUBMIT in and out */
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
 }

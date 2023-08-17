@@ -1,8 +1,16 @@
 <html>
 <link rel="stylesheet" href="index.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 <body>
   <div class="title">
     Green Haulers
+    <div class="tagline">
+      paving a way for Home Waste solutions
+    </div>
   </div>
   <div class="content">
     <div class="tabs">
@@ -30,7 +38,93 @@
         logo
       </div>
       <div id="bookings" class="tabContentDetails">
-        details
+        <div class="name displayGrid">
+          NAME:
+          <input type="text" placeholder="Enter your name">
+      </div>
+      <div class="date displayGrid">
+          DATE:
+          <input type="date" placeholder="select">
+      </div>
+      <div class="time displayGrid">
+          Time:
+          <input type="time" placeholder="">
+      </div>
+      <div class="address displayGrid">
+          Place with detailed address:
+          <textarea id="w3review" name="w3review" rows="4"></textarea>
+      </div>
+      <div class="number displayGrid">
+          Phone number:
+          <input type="text" placeholder="">
+      </div>
+      <div class="wasteType displayFlexSpaceBetween">
+        select type of waste:
+      <label for="1">
+          wet
+          <input type="checkbox" value="wet" name="type" id="1">
+      </label>
+      <label for="2">
+          dry
+          <input type="checkbox" value="dry" name="type" id="2">
+      </label>
+      <label for="3">
+          both
+          <input type="checkbox" value="both" name="type" id="3">
+      </label>
+      </div>
+      <div class="weight displayGrid"  id="wetWeight">
+          Approx weight(wet waste):
+          <input type="text" placeholder="">
+      </div>
+      <div class="weight displayGrid" id="dryWeight">
+        Approx weight(dry waste):
+        <input type="text" placeholder="">
+    </div>
+      <div class="cost displayGrid">
+          cost:
+      </div>
+      <!-- Button to Open the Modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+          ?
+      </button>
+      <!-- The Modal -->
+      <div class="modal" id="myModal">
+          <div class="modal-dialog">
+              <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">price list</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+            </div>
+                  <ul>
+                      <li>500g-1kg:25</li>
+                      <li>1kg-2kg:35</li>
+                      <li>2kg-3kg:45</li>
+                      <li>3kg-4kg:55</li>
+                      <li>above 4kg: 65</li>
+                  </ul>
+      
+              </div>
+          </div>
+      </div>
+      <br>
+      
+      <br>
+      <div class="buttons">
+          <div class="button1">
+              <input type="reset" value="reset">
+          </div>
+      </div>
+  <!-- Use a button to open the SUBMIT -->
+  <button onclick="myFunction()">SUBMIT</button>
+  
+  <!-- The actual SUBMIT -->
+  <div id="SUBMIT">succesfully submitted</div>
       </div>
       <div id="myRequests" class="tabContentDetails">
         status
