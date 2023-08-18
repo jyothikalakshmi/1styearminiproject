@@ -24,7 +24,7 @@ body {
   display:flex;
   flex-direction: column;
   width:10%;
-  
+  background:linear-gradient(180deg,#ff4328,#bc0557);
 }
 .tabcontent{
   position:absolute;
@@ -44,6 +44,7 @@ body {
 .tabButton{
   height:100%;
   width:100%;
+  background:transparent;
 }
 .name {
   color: brown;
@@ -52,7 +53,6 @@ body {
 }
 .displayGrid{
   display: grid;
-    grid-template-columns: 30% 70%;
 }
 .displayFlexSpaceBetween{
   display: flex;
@@ -62,11 +62,13 @@ body {
 .date {
   color: brown;
   padding-top: 20px;
+  width: fit-content;
 }
 
 .time {
   color: brown;
   padding-top: 20px;
+  width: fit-content;
 }
 
 .address {
@@ -137,4 +139,18 @@ body {
 @keyframes fadeout {
   from {bottom: 30px; opacity: 1;}
   to {bottom: 0; opacity: 0;}
+}
+.costModalBody{
+  display:flex !important;
+  justify-content: space-around;
+}
+.costSpace{
+  padding-top: 1em;
+}
+.costFooter{
+  padding:24px;
+}
+.totalCostClass{
+  display: flex;
+  column-gap: 12px;
 }
