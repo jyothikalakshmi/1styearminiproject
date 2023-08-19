@@ -154,3 +154,7 @@ body {
   display: flex;
   column-gap: 12px;
 }
+.about{
+  font-size: 22px;
+    font-style: initial;
+}
