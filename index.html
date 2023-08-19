@@ -90,7 +90,7 @@
           <!-- Button to Open the Modal -->
           <i class="fa fa-info-circle" data-bs-toggle="modal" data-bs-target="#myModal"></i> :
           <div id="totalCost"></div>
-        </div>        
+        </div>
         <!-- The Modal -->
         <div class="modal" id="myModal">
           <div class="modal-dialog">
@@ -121,17 +121,17 @@
                 </ul>
               </div>
               <div class="costFooter">
-               <div>
-                <span>NOTE:</span>
-               </div> 
-               <ul>
-                <li>
-                  For Wet waste, above 4kgs, additional 15 Rupees for KG will be charged.
-                </li>
-                <li>
-                  For Dry waste, Above 4kgs, additional 10 Rupees for KG will be charged.
-                </li>
-               </ul>  
+                <div>
+                  <span>NOTE:</span>
+                </div>
+                <ul>
+                  <li>
+                    For Wet waste, above 4kgs, additional 15 Rupees for KG will be charged.
+                  </li>
+                  <li>
+                    For Dry waste, Above 4kgs, additional 10 Rupees for KG will be charged.
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -151,24 +151,42 @@
         <div id="SUBMIT">succesfully submitted</div>
       </div>
       <div id="myRequests" class="tabContentDetails">
-        <h1>My Request</h1>
+        <h1>My <span>Request</span></h1>
         <br>
         <div class="process-wrapper">
-           <div id="progress-br-container">
+           <div id="progress-bar-container">
            <ul>
                <li class="step step01 active">
-                   <div class="step-inner">BOOKING</div>
+                   <div class="step-inner">Booking</div>
                </li>
                <li class="step step02">
-                   <div class="step-inner">ASSIGNED</div>
+                   <div class="step-inner">Assigned</div>
                </li>
                <li class="step step03">
-                   <div class="step-inner">ON THE WAY</div>
+                   <div class="step-inner">On The Way</div>
                </li>
                <li class="step step04">
-                   <div class="step-inner">PICKED UP</div>
+                   <div class="step-inner">Picked Up</div>
                </li>
            </ul>
+           <div id="line">
+               <div id="line-process"></div>
+           </div>
+           </div>
+           <div id="progress-content-section">
+               <div class="section-content discovery active">
+                   <h2>BOOKING</h2>
+               </div>
+               <div class="section-content strategy">
+                   <h2>ASSIGNED</h2>
+               </div>
+               <div class="section-content creative">
+                   <h2>ON THE WAY</h2>
+               </div>
+               <div class="section-content production">
+                   <h2>PICKED UP</h2>
+               </div>
+   
            </div>
         </div>
       </div>
