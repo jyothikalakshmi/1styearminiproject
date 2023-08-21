@@ -304,3 +304,52 @@ h1 span{
   font-size: 22px;
     font-style: initial;
 }
+
+#heading{
+  text-align: left;
+  font-size: 30px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  color: black;
+  font-size:25px;
+}
+#date{
+  font-size: 20px;
+  padding :20px;
+  margin:25px
+  
+}
+
+#reset{
+  
+   margin-left:25px;
+}
+#dsc2{
+  margin-right:20px;
+}
+
+.labelGroup{
+  font-weight: bold;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid black;
+  max-width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.popup-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.popup-close {
+  cursor: pointer;
+}

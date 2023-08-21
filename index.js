@@ -146,3 +146,31 @@ function validateTime(selectedTime) {
       document.getElementById('timeInput').value = ''; // Reset the input value
   }
 }
+
+function handleFormReset() {
+  // Disable the submit button after form reset
+  document.querySelector('#raiseComplaint').disabled = true;
+}
+
+const form = document.getElementById("myForm");
+const submitButton = document.getElementById("submitButton");
+
+form.addEventListener("input", () => {
+  if (form.checkValidity()) {
+    submitButton.removeAttribute("disabled");
+  } else {
+    submitButton.setAttribute("disabled", "true");
+  }
+});
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  if (form.checkValidity()) {
+    // All required fields are filled in correctly, you can proceed with form submission
+    alert("Form submitted successfully!");
+    form.reset();
+    submitButton.setAttribute("disabled", "true");
+  } else {
+    alert("Please fill in all required fields correctly.");
+  }         
+});
