@@ -146,6 +146,20 @@ function validateTime(selectedTime) {
       document.getElementById('timeInput').value = ''; // Reset the input value
   }
 }
+const resetButton = document.getElementById("resetButton");
+const nameInput = document.getElementById("inputName");
+const dateInput = document.getElementById("inputDate");
+const timeInput = document.getElementById("inputTime");
+const addressInput = document.getElementById("w3review");
+const phoneNumberInput = document.getElementById("inputNumber");
+
+resetButton.addEventListener("click",function(){
+  nameInput.value="";
+  dateInput.value="";
+  timeInput.value="";
+  addressInput.value="";
+  phoneNumberInput.value="";
+});
 
 function handleFormReset() {
   // Disable the submit button after form reset

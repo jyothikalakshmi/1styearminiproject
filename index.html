@@ -10,7 +10,7 @@
   <div class="title">
     Green Haulers
     <div class="tagline">
-      paving a way for Home Waste solutions
+      Paving a way for Home Waste solutions
     </div>
   </div>
   <div class="content">
@@ -39,155 +39,159 @@
         logo
       </div>
       <div id="bookings" class="tabContentDetails">
+       <div class="displayFlexSpaceBetween">
         <div>
-          BOOKINGS
-        </div>
-        <div class="name displayGrid">
-          NAME:
-          <input type="text" placeholder="Enter your name">
-        </div>
-        <div class="date displayGrid">
-          DATE:
-          <input type="date" placeholder="select">
-        </div>
-        <div class="time displayGrid">
-          Time:
-          <input type="time" onchange="validateTime(this.value)" id="timeInput">
-        </div>
-        <div class="address displayGrid">
-          Place with detailed address:
-          <textarea id="w3review" name="w3review" rows="4" placeholder="Enter your address"></textarea>
-        </div>
-        <div class="number displayGrid">
-          Phone number:
-          <input type="number" placeholder="Enter your phone number">
-        </div>
-        <div class="wasteType displayFlexSpaceBetween">
-          select type of waste:
-          <label for="1">
-            wet
-            <input type="checkbox" value="wet" name="type" id="1">
-          </label>
-          <label for="2">
-            dry
-            <input type="checkbox" value="dry" name="type" id="2">
-          </label>
-          <label for="3">
-            both
-            <input type="checkbox" value="both" name="type" id="3">
-          </label>
-        </div>
-        <div class="weight displayGrid" id="wetWeight">
-          Approx weight(wet waste in kgs):
-          <input type="number" placeholder="Enter weight in Kgs" id="wetWasteKg">
-        </div>
-        <div class="weight displayGrid" id="dryWeight">
-          Approx weight(dry waste in kgs):
-          <input type="number" placeholder="Enter weight in Kgs" id="dryWasteKg">
-        </div>
-        <div id="totalCostDiv">
-          Total Cost
-          <!-- Button to Open the Modal -->
-          <i class="fa fa-info-circle" data-bs-toggle="modal" data-bs-target="#myModal"></i> :
-          <div id="totalCost"></div>
-        </div>
-        <!-- The Modal -->
-        <div class="modal" id="myModal">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <!-- Modal Header -->
-              <div class="modal-header">
-                <h4 class="modal-title">Price List</h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-              </div>
-
-              <!-- Modal body -->
-              <div class="modal-body costModalBody">
-                <ul>
-                  Wet waste
-                  <div class="costSpace">
-                    <li>0-1kg:INR 25</li>
-                    <li>1kg-2kg:INR 35</li>
-                    <li>2kg-3kg:INR 45</li>
-                    <li>3kg-4kg:INR 55</li>
-                  </div>
-                </ul>
-                <ul>
-                  Dry waste
-                  <div class="costSpace">
-                    <li>0-2KG:INR 30</li>
-                    <li>2kg-4kg:INR 50</li>
-                  </div>
-                </ul>
-              </div>
-              <div class="costFooter">
-                <div>
-                  <span>NOTE:</span>
+          <div class="bookingsHeading">
+            BOOKINGS
+          </div>
+          <div class="name displayGrid">
+            NAME:
+            <input type="text"  id="inputName" placeholder="Enter your name">
+          </div>
+          <div class="date displayGrid">
+            DATE:
+            <input type="date" id="inputDate" placeholder="select">
+          </div>
+          <div class="time displayGrid">
+            TIME:
+            <input type="time" id="inputTime" onchange="validateTime(this.value)" id="timeInput">
+          </div>
+          <div class="address displayGrid">
+            PLACE WITH DETAILED ADDRESS:
+            <textarea id="w3review" name="w3review" rows="4" placeholder="Enter your address"></textarea>
+          </div>
+          <div class="number displayGrid">
+            PHONE NUMBER:
+            <input type="text" id="inputNumber" placeholder="Enter your phone number" maxlength="10">
+          </div>
+          <div class="wasteType displayFlexSpaceBetween">
+            SELECT TYPE OF WASTE:
+            <label for="1">
+              WET
+              <input type="checkbox" value="wet" name="type" id="1">
+            </label>
+            <label for="2">
+              DRY
+              <input type="checkbox" value="dry" name="type" id="2">
+            </label>
+            <label for="3">
+              BOTH
+              <input type="checkbox" value="both" name="type" id="3">
+            </label>
+          </div>
+          <div class="weight displayGrid" id="wetWeight">
+            APPROX WEIGHT(wet waste in kgs):
+            <input type="number" placeholder="Enter weight in Kgs" id="wetWasteKg">
+          </div>
+          <div class="weight displayGrid" id="dryWeight">
+            APPROX WEIGHT(dry waste in kgs):
+            <input type="number" placeholder="Enter weight in Kgs" id="dryWasteKg">
+          </div>
+          <div id="totalCostDiv">
+            TOTAL COST
+            <!-- Button to Open the Modal -->
+            <i class="fa fa-info-circle" data-bs-toggle="modal" data-bs-target="#myModal"></i> :
+            <div id="totalCost"></div>
+          </div>
+          <!-- The Modal -->
+          <div class="modal" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Price List</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <ul>
-                  <li>
-                    For Wet waste, above 4kgs, additional 15 Rupees for KG will be charged.
-                  </li>
-                  <li>
-                    For Dry waste, Above 4kgs, additional 10 Rupees for KG will be charged.
-                  </li>
-                </ul>
+
+                <!-- Modal body -->
+                <div class="modal-body costModalBody">
+                  <ul>
+                    Wet waste
+                    <div class="costSpace">
+                      <li>0-1kg:INR 25</li>
+                      <li>1kg-2kg:INR 35</li>
+                      <li>2kg-3kg:INR 45</li>
+                      <li>3kg-4kg:INR 55</li>
+                    </div>
+                  </ul>
+                  <ul>
+                    Dry waste
+                    <div class="costSpace">
+                      <li>0-2KG:INR 30</li>
+                      <li>2kg-4kg:INR 50</li>
+                    </div>
+                  </ul>
+                </div>
+                <div class="costFooter">
+                  <div>
+                    <span>NOTE:</span>
+                  </div>
+                  <ul>
+                    <li>
+                      For Wet waste, above 4kgs, additional 15 Rupees for KG will be charged.
+                    </li>
+                    <li>
+                      For Dry waste, Above 4kgs, additional 10 Rupees for KG will be charged.
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <br>
+          <br>
 
-        <br>
-        <div class="buttons">
-          <div class="button1">
-            <input type="reset" value="reset">
-          </div>
+          <br>
+          <div class="buttons">
+            <div class="button1">
+              <input type="button" value="RESET" id="resetButton">
+            </div>
+          </div> 
+          <!-- Use a button to open the SUBMIT -->
+          <button onclick="window.location.href = 'success.html';">SUBMIT</button>
         </div>
-        <!-- Use a button to open the SUBMIT -->
-        <button onclick="window.location.href = 'success.html';">SUBMIT</button>
-
-        <!-- The actual SUBMIT -->
-        <div id="SUBMIT">succesfully submitted</div>
+        <div>
+          <img src="./Assets/booking.jpg" alt="" class="bookingImage">
+        </div>
+       </div>
       </div>
       <div id="myRequests" class="tabContentDetails">
         <h1>My <span>Request</span></h1>
         <br>
         <div class="process-wrapper">
-           <div id="progress-bar-container">
-           <ul>
-               <li class="step step01 active">
-                   <div class="step-inner">Booking</div>
-               </li>
-               <li class="step step02">
-                   <div class="step-inner">Assigned</div>
-               </li>
-               <li class="step step03">
-                   <div class="step-inner">On The Way</div>
-               </li>
-               <li class="step step04">
-                   <div class="step-inner">Picked Up</div>
-               </li>
-           </ul>
-           <div id="line">
-               <div id="line-process"></div>
-           </div>
-           </div>
-           <div id="progress-content-section">
-               <div class="section-content discovery active">
-                   <h2>BOOKING</h2>
-               </div>
-               <div class="section-content strategy">
-                   <h2>ASSIGNED</h2>
-               </div>
-               <div class="section-content creative">
-                   <h2>ON THE WAY</h2>
-               </div>
-               <div class="section-content production">
-                   <h2>PICKED UP</h2>
-               </div>
-   
-           </div>
+          <div id="progress-bar-container">
+            <ul>
+              <li class="step step01 active">
+                <div class="step-inner">Booking</div>
+              </li>
+              <li class="step step02">
+                <div class="step-inner">Assigned</div>
+              </li>
+              <li class="step step03">
+                <div class="step-inner">On The Way</div>
+              </li>
+              <li class="step step04">
+                <div class="step-inner">Picked Up</div>
+              </li>
+            </ul>
+            <div id="line">
+              <div id="line-process"></div>
+            </div>
+          </div>
+          <div id="progress-content-section">
+            <div class="section-content discovery active">
+              <h2>BOOKING</h2>
+            </div>
+            <div class="section-content strategy">
+              <h2>ASSIGNED</h2>
+            </div>
+            <div class="section-content creative">
+              <h2>ON THE WAY</h2>
+            </div>
+            <div class="section-content production">
+              <h2>PICKED UP</h2>
+            </div>
+
+          </div>
         </div>
       </div>
       <div id="raiseComplaint" class="tabContentDetails">
@@ -228,24 +232,24 @@
       </div>
       <div id="aboutUs" class="tabContentDetails">
         <div class="about">
-        <h1>ABOUT US</h1>
-        <p>"CLEAN EARTH IS A GREEN EARTH"
-          Welcome to <br>
-          We the team ,are striving towards cleaner Earth through waste management<br>
+          <h1>ABOUT US</h1>
+          <p>"CLEAN EARTH IS A GREEN EARTH"
+            Welcome to <br>
+            We the team ,are striving towards cleaner Earth through waste management<br>
 
-          keeping the surrounding (house,offfice,educational institutes) clean is the first step towards clean
-          Earth <br>
-          This website is designed for customer benefits<br>
-          As customer can dispose their waste or thrash by just using the fingertips <br>
-          we help to dispose the waste or thrash from the doorstep<br>
-          <br>
-          INFORMATION<br>
-          <br>
-          We the team are really thankful for xyz project to take intiative to collabrat with us.<br>
-          They help us to convert the the degradable waste into manure and make the soil fertile<br>
-           which leads to GREEN PLANET
-           </p>
-      </div>
+            keeping the surrounding (house,offfice,educational institutes) clean is the first step towards clean
+            Earth <br>
+            This website is designed for customer benefits<br>
+            As customer can dispose their waste or thrash by just using the fingertips <br>
+            we help to dispose the waste or thrash from the doorstep<br>
+            <br>
+            INFORMATION<br>
+            <br>
+            We the team are really thankful for xyz project to take intiative to collabrat with us.<br>
+            They help us to convert the the degradable waste into manure and make the soil fertile<br>
+            which leads to GREEN PLANET
+          </p>
+        </div>
       </div>
     </div>
   </div>

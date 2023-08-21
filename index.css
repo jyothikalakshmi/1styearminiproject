@@ -31,10 +31,12 @@ body {
   left:10%;
   top:130px;
 }
+  
 .tabContentDetails{
   width:150%;
   padding:64px;
 }
+
 .tab{
   width:100%;
   border-right:1px solid black;
@@ -304,6 +306,17 @@ h1 span{
   font-size: 22px;
     font-style: initial;
 }
+.bookingImage{
+  height: 70vh;
+  width: 100%;
+}
+.bookingsHeading{
+  font-size:-webkit-xxx-large;
+  text-align: center;
+}
+.tabContentDetails{
+  background:linear-gradient(135 deg,rgb(74,234,220)0%,rgb(151,120,209)20%,rgb(207,42,186)40%,rgb(238,44,130)60%,rgb(251,105,98)80%,rgb(254,248,70)100%);
+}
 
 #heading{
   text-align: left;
@@ -322,6 +335,7 @@ h1 span{
 
 #reset{
   
+
    margin-left:25px;
 }
 #dsc2{
