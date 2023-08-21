@@ -40,17 +40,17 @@
       </div>
       <div id="bookings" class="tabContentDetails">
        <div class="displayFlexSpaceBetween">
-        <div>
+        <div style="width: 500px;">
           <div class="bookingsHeading">
             BOOKINGS
           </div>
           <div class="name displayGrid">
             NAME:
-            <input type="text"  id="inputName" placeholder="Enter your name">
+            <input type="text"  id="inputName" placeholder="Enter your name" onchange="checkSubmitButtonStatus()" style="width: 200px;">
           </div>
           <div class="date displayGrid">
             DATE:
-            <input type="date" id="inputDate" placeholder="select">
+            <input type="date" id="inputDate" placeholder="select" onchange="checkSubmitButtonStatus()">
           </div>
           <div class="time displayGrid">
             TIME:
@@ -58,11 +58,11 @@
           </div>
           <div class="address displayGrid">
             PLACE WITH DETAILED ADDRESS:
-            <textarea id="w3review" name="w3review" rows="4" placeholder="Enter your address"></textarea>
+            <textarea id="w3review" name="w3review" rows="4" placeholder="Enter your address" onchange="checkSubmitButtonStatus()"></textarea>
           </div>
           <div class="number displayGrid">
             PHONE NUMBER:
-            <input type="text" id="inputNumber" placeholder="Enter your phone number" maxlength="10">
+            <input type="text" id="inputNumber" placeholder="Enter your phone number" maxlength="10" onchange="checkSubmitButtonStatus()" style="width: 200px;">
           </div>
           <div class="wasteType displayFlexSpaceBetween">
             SELECT TYPE OF WASTE:
@@ -81,13 +81,13 @@
           </div>
           <div class="weight displayGrid" id="wetWeight">
             APPROX WEIGHT(wet waste in kgs):
-            <input type="number" placeholder="Enter weight in Kgs" id="wetWasteKg">
+            <input type="number" placeholder="Enter weight in Kgs" id="wetWasteKg" onchange="checkSubmitButtonStatus()">
           </div>
           <div class="weight displayGrid" id="dryWeight">
             APPROX WEIGHT(dry waste in kgs):
-            <input type="number" placeholder="Enter weight in Kgs" id="dryWasteKg">
+            <input type="number" placeholder="Enter weight in Kgs" id="dryWasteKg" onchange="checkSubmitButtonStatus()">
           </div>
-          <div id="totalCostDiv">
+          <div id="totalCostDiv" class="weight">
             TOTAL COST
             <!-- Button to Open the Modal -->
             <i class="fa fa-info-circle" data-bs-toggle="modal" data-bs-target="#myModal"></i> :
@@ -142,12 +142,11 @@
 
           <br>
           <div class="buttons">
-            <div class="button1">
+            
               <input type="button" value="RESET" id="resetButton">
-            </div>
+              <button onclick="window.location.href = 'success.html';" id="bookingSubmit" disabled>SUBMIT</button>
           </div> 
-          <!-- Use a button to open the SUBMIT -->
-          <button onclick="window.location.href = 'success.html';">SUBMIT</button>
+          
         </div>
         <div>
           <img src="./Assets/booking.jpg" alt="" class="bookingImage">

@@ -19,6 +19,7 @@ body {
 }
 .content{
  padding-top:130px;
+ background: linear-gradient(180deg, lime, transparent);
 }
 .tabs{
   display:flex;
