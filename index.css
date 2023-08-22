@@ -1,5 +1,6 @@
 body {
   margin: 0px;
+  background: linear-gradient(90deg, rgb(173, 253, 162) 0%, rgb(17, 211, 243) 100%);
 }
 
 .title {
@@ -19,7 +20,7 @@ body {
 }
 .content{
  padding-top:130px;
- background: linear-gradient(180deg, lime, transparent);
+ background: linear-gradient(90deg, rgb(173, 253, 162) 0%, rgb(17, 211, 243) 100%);
 }
 .tabs{
   display:flex;
@@ -315,9 +316,6 @@ h1 span{
   font-size:-webkit-xxx-large;
   text-align: center;
 }
-.tabContentDetails{
-  background:linear-gradient(135 deg,rgb(74,234,220)0%,rgb(151,120,209)20%,rgb(207,42,186)40%,rgb(238,44,130)60%,rgb(251,105,98)80%,rgb(254,248,70)100%);
-}
 
 #heading{
   text-align: left;
@@ -367,4 +365,16 @@ h1 span{
 
 .popup-close {
   cursor: pointer;
+}
+.logo{
+  position: fixed;
+  left:24px;
+  height: 120px;
+}
+.contactUsText{
+  margin-top: 12px;
+  font-size: 24px;
+}
+.contactUsLogo{
+  height: 400px;
 }

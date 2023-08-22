@@ -8,6 +8,7 @@
 
 <body>
   <div class="title">
+    <img src="./Assets/logo.png" alt="" class="logo">
     Green Haulers
     <div class="tagline">
       Paving a way for Home Waste solutions
@@ -33,10 +34,22 @@
         <button class="tabButton" onclick="openTab('aboutUs')">ABOUT US</button>
 
       </div>
+      <div class="tab">
+        <button class="tabButton" onclick="openTab('contactUs')">CONTACT US</button>
+
+      </div>
     </div>
     <div class="tabContent">
       <div id="home" class="tabContentDetails">
-        logo
+        <div style="text-align: center;">
+          <img src="./Assets/homePage.jpg" alt="">
+          <div class="contactUsText">
+            Worried about your watse left at home? <br>
+            We are just a step away from your home to collect waste at minimal cost.<br>
+             Book your convenient time now!!<br>
+             <button onclick="openTab('bookings')" style="background: transparent;">Book Now</button>
+          </div>
+        </div>
       </div>
       <div id="bookings" class="tabContentDetails">
        <div class="displayFlexSpaceBetween">
@@ -249,6 +262,16 @@
             which leads to GREEN PLANET
           </p>
         </div>
+      </div>
+      <div id="contactUs" class="tabContentDetails">
+       <div style="text-align: center;">
+        <img src="./Assets/contactUs.png" alt="" class="contactUsLogo">
+        <div class="contactUsText">
+          Please Contact us at our toll free number 080-123456789. 
+          Our working hours are 6AM to 8PM.
+        </div>
+        
+       </div>
       </div>
     </div>
   </div>
