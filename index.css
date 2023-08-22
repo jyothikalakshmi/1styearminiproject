@@ -1,5 +1,6 @@
 body {
   margin: 0px;
+  background: linear-gradient(90deg, rgb(173, 253, 162) 0%, rgb(17, 211, 243) 100%);
 }
 
 .title {
@@ -9,52 +10,63 @@ body {
   color: black;
   position: fixed;
   font-size: 60px;
-  background:linear-gradient(15deg,#13547a,#80d0c7);
+  background: linear-gradient(15deg, #13547a, #80d0c7);
   z-index: 1;
 }
-.tagline{
+
+.tagline {
   position: absolute;
-  left:60%;
-  font-size:30px;
+  left: 60%;
+  font-size: 30px;
 }
-.content{
- padding-top:130px;
+
+.content {
+  padding-top: 130px;
+  background: linear-gradient(90deg, rgb(173, 253, 162) 0%, rgb(17, 211, 243) 100%);
 }
-.tabs{
-  display:flex;
+
+.tabs {
+  display: flex;
   flex-direction: column;
-  width:10%;
-  background:linear-gradient(180deg,#ff4328,#bc0557);
+  width: 10%;
+  background: linear-gradient(180deg, #ff4328, #bc0557);
 }
-.tabcontent{
-  position:absolute;
-  left:10%;
-  top:130px;
+
+.tabcontent {
+  position: absolute;
+  left: 10%;
+  top: 130px;
 }
-.tabContentDetails{
-  width:150%;
-  padding:64px;
+
+.tabContentDetails {
+  width: 150%;
+  padding: 64px;
 }
-.tab{
-  width:100%;
-  border-right:1px solid black;
-  border-bottom:1px solid black;
-  height:140px;
+
+.tab {
+  width: 100%;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  height: 140px;
 }
-.tabButton{
-  height:100%;
-  width:100%;
-  background:transparent;
+
+.tabButton {
+  height: 100%;
+  width: 100%;
+  background: transparent;
 }
+
 .name {
   color: brown;
   padding-top: 10px;
-  
+
 }
-.displayGrid{
+
+.displayGrid {
   display: grid;
 }
-.displayFlexSpaceBetween{
+
+.displayFlexSpaceBetween {
   display: flex;
   justify-content: space-between;
 }
@@ -81,7 +93,8 @@ body {
   padding-top: 20px;
 
 }
-.wasteType{
+
+.wasteType {
   color: brown;
   padding-top: 20px;
 
@@ -91,29 +104,45 @@ body {
   color: brown;
   padding-top: 40px;
 }
-.buttons{
-  display:flex;
-  justify-content:space-evenly;
-  padding-top:20px;
-}/* The SUBMIT - position it at the bottom and in the middle of the screen */
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 20px;
+}
+
+/* The SUBMIT - position it at the bottom and in the middle of the screen */
 #SUBMIT {
-  visibility: hidden; /* Hidden by default. Visible on click */
-  min-width: 250px; /* Set a default minimum width */
-  margin-left: -125px; /* Divide value of min-width by 2 */
-  background-color: #333; /* Black background color */
-  color: #fff; /* White text color */
-  text-align: center; /* Centered text */
-  border-radius: 2px; /* Rounded borders */
-  padding: 16px; /* Padding */
-  position: fixed; /* Sit on top of the screen */
-  z-index: 1; /* Add a z-index if needed */
-  left: 50%; /* Center the SUBMIT */
-  bottom: 30px; /* 30px from the bottom */
+  visibility: hidden;
+  /* Hidden by default. Visible on click */
+  min-width: 250px;
+  /* Set a default minimum width */
+  margin-left: -125px;
+  /* Divide value of min-width by 2 */
+  background-color: #333;
+  /* Black background color */
+  color: #fff;
+  /* White text color */
+  text-align: center;
+  /* Centered text */
+  border-radius: 2px;
+  /* Rounded borders */
+  padding: 16px;
+  /* Padding */
+  position: fixed;
+  /* Sit on top of the screen */
+  z-index: 1;
+  /* Add a z-index if needed */
+  left: 50%;
+  /* Center the SUBMIT */
+  bottom: 30px;
+  /* 30px from the bottom */
 }
 
 /* Show the SUBMIT when clicking on a button (class added with JavaScript) */
 #SUBMIT.show {
-  visibility: visible; /* Show the SUBMIT */
+  visibility: visible;
+  /* Show the SUBMIT */
   /* Add animation: Take 0.5 seconds to fade in and out the SUBMIT.
   However, delay the fade out process for 2.5 seconds */
   -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
@@ -122,41 +151,73 @@ body {
 
 /* Animations to fade the SUBMIT in and out */
 @-webkit-keyframes fadein {
-  from {bottom: 0; opacity: 0;}
-  to {bottom: 30px; opacity: 1;}
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
 }
 
 @keyframes fadein {
-  from {bottom: 0; opacity: 0;}
-  to {bottom: 30px; opacity: 1;}
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes fadeout {
-  from {bottom: 30px; opacity: 1;}
-  to {bottom: 0; opacity: 0;}
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
 }
 
 @keyframes fadeout {
-  from {bottom: 30px; opacity: 1;}
-  to {bottom: 0; opacity: 0;}
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
 }
-.costModalBody{
-  display:flex !important;
+
+.costModalBody {
+  display: flex !important;
   justify-content: space-around;
 }
-.costSpace{
+
+.costSpace {
   padding-top: 1em;
 }
-.costFooter{
-  padding:24px;
+
+.costFooter {
+  padding: 24px;
 }
-.totalCostClass{
+
+.totalCostClass {
   display: flex;
   column-gap: 12px;
 }
 
-h1{
-  color:white;
+h1 {
+  color: white;
   font-weight: 700;
   margin-top: 125px;
   text-align: center;
@@ -166,17 +227,18 @@ h1{
 }
 
 
-h1 span{
+h1 span {
   color: deepskyblue;
 
 }
 
-.process-wrapper{
+.process-wrapper {
+  display: none;
   margin: auto;
   max-width: 1080px;
 }
 
-#progress-bar-container{
+#progress-bar-container {
   position: relative;
   width: 100%;
   margin: auto;
@@ -184,7 +246,7 @@ h1 span{
   margin-top: 75px;
 }
 
-#progress-bar-container ul{
+#progress-bar-container ul {
   padding: 0;
   margin: 0;
   padding-top: 15px;
@@ -194,7 +256,7 @@ h1 span{
   margin-top: -40px;
 }
 
-#progress-bar-container li:before{
+#progress-bar-container li:before {
   content: "";
   display: block;
   margin: auto;
@@ -206,11 +268,11 @@ h1 span{
 }
 
 #progress-bar-container li.active:before,
-#progress-bar-container li.hover:before{
+#progress-bar-container li.hover:before {
   background: deepskyblue;
 }
 
-#progress-bar-container li{
+#progress-bar-container li {
   list-style: none;
   float: left;
   width: 20%;
@@ -228,7 +290,7 @@ h1 span{
 }
 
 
-#progress-bar-container li .step-inner{
+#progress-bar-container li .step-inner {
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -236,12 +298,12 @@ h1 span{
 }
 
 #progress-bar-container li.active,
-#progress-bar-container li:hover{
+#progress-bar-container li:hover {
   color: deepskyblue;
 
 }
 
-#progress-bar-container li:after{
+#progress-bar-container li:after {
   content: "";
   display: block;
   width: 5px;
@@ -251,19 +313,19 @@ h1 span{
   border: solid 7px white;
   border-radius: 50%;
   margin-top: 40px;
-  box-shadow: 0 2px 13px -1px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 13px -1px rgba(0, 0, 0, 0.3);
   transition: all ease 0.2s;
 }
 
-#progress-bar-container li:hover:after{
+#progress-bar-container li:hover:after {
   background: deepskyblue;
 }
 
-#progress-bar-container li.active:after{
+#progress-bar-container li.active:after {
   background: deepskyblue;
 }
 
-#progress-bar-container #line{
+#progress-bar-container #line {
   width: 80%;
   margin: auto;
   background: #eee;
@@ -276,7 +338,7 @@ h1 span{
   transition: all ease 0.9s;
 }
 
-#progress-bar-container #line-process{
+#progress-bar-container #line-process {
   content: "";
   width: 3%;
   height: 100%;
@@ -288,7 +350,7 @@ h1 span{
   transition: all ease 0.9s;
 }
 
-#progress-content-section{
+#progress-content-section {
   width: 90%;
   margin: auto;
   background: #f3f3f3;
@@ -296,11 +358,96 @@ h1 span{
 }
 
 
-#progress-content-section .section-content{
+#progress-content-section .section-content {
   padding: 30px 40px;
   text-align: center;
 }
-.about{
+
+.about {
   font-size: 22px;
-    font-style: initial;
+  font-style: initial;
+}
+
+.bookingImage {
+  height: 70vh;
+  width: 100%;
+}
+
+.bookingsHeading {
+  font-size: -webkit-xxx-large;
+  text-align: center;
+}
+
+#heading {
+  text-align: left;
+  font-size: 30px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  color: black;
+  font-size: 25px;
+}
+
+#date {
+  font-size: 20px;
+  padding: 20px;
+  margin: 25px
+}
+
+#reset {
+
+
+  margin-left: 25px;
+}
+
+#dsc2 {
+  margin-right: 20px;
+}
+
+.labelGroup {
+  font-weight: bold;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid black;
+  max-width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.popup-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.popup-close {
+  cursor: pointer;
+}
+
+.logo {
+  position: fixed;
+  left: 24px;
+  height: 120px;
+}
+
+.contactUsText {
+  margin-top: 12px;
+  font-size: 24px;
+}
+
+.contactUsLogo {
+  height: 400px;
+}
+
+.bookingSearchDiv {
+  margin-top: 60px;
+  display: flex;
+  column-gap: 12px;
+  text-align: center;
+  padding-left: 120px;
 }
