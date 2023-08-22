@@ -236,3 +236,17 @@ function checkSubmitButtonStatus() {
     document.getElementById('bookingSubmit').disabled = true;
   }
 }
+
+function bookingsSearch(){
+  if(document.getElementById('bookingSearch').value){
+    document.getElementById('bookingSearchDetails').style.display='block';
+  }
+  else{
+    alert("Enter Booking ID");
+  }
+}
+
+function bookingsSearchReset(){
+  document.getElementById('bookingSearchDetails').style.display='none';
+  document.getElementById('bookingSearch').value=""
+}

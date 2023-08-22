@@ -25,7 +25,7 @@
         <button class="tabButton" onclick="openTab('bookings')">BOOKINGS</button>
       </div>
       <div class="tab">
-        <button class="tabButton" onclick="openTab('myRequests')">MY REQUESTS</button>
+        <button class="tabButton" onclick="openTab('myRequests')">TRACK BOOKING</button>
       </div>
       <div class="tab">
         <button class="tabButton" onclick="openTab('raiseComplaint')">RAISE COMPLAINTS</button>
@@ -167,9 +167,15 @@
        </div>
       </div>
       <div id="myRequests" class="tabContentDetails">
-        <h1>My <span>Request</span></h1>
+        <h1>Check Status <span>of Booking</span></h1>
+        <div class="bookingSearchDiv">
+          <div>Booking ID: <input type="text" placeholder="Enter your booking ID" id="bookingSearch"></div>
+          <button onclick="bookingsSearch()">Search</button>
+          <button onclick="bookingsSearchReset()">Reset</button>
+        </div>
+       
         <br>
-        <div class="process-wrapper">
+        <div class="process-wrapper" id="bookingSearchDetails">
           <div id="progress-bar-container">
             <ul>
               <li class="step step01 active">
@@ -188,21 +194,6 @@
             <div id="line">
               <div id="line-process"></div>
             </div>
-          </div>
-          <div id="progress-content-section">
-            <div class="section-content discovery active">
-              <h2>BOOKING</h2>
-            </div>
-            <div class="section-content strategy">
-              <h2>ASSIGNED</h2>
-            </div>
-            <div class="section-content creative">
-              <h2>ON THE WAY</h2>
-            </div>
-            <div class="section-content production">
-              <h2>PICKED UP</h2>
-            </div>
-
           </div>
         </div>
       </div>
