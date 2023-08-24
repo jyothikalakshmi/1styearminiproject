@@ -22,7 +22,9 @@ body {
 
 .content {
   padding-top: 130px;
-  background: linear-gradient(90deg, rgb(173, 253, 162) 0%, rgb(17, 211, 243) 100%);
+  width: 100%;
+    height: 100vh; /* Adjust the height as needed */
+    background: linear-gradient(rgb(247, 247, 134),rgb(245, 240, 240));
 }
 
 .tabs {
@@ -42,6 +44,7 @@ body {
   width: 150%;
   padding: 64px;
 }
+
 
 .tab {
   width: 100%;
