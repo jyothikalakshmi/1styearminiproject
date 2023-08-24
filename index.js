@@ -194,15 +194,31 @@ form.addEventListener("input", () => {
   }
 });
 
+function validateForm() {
+  var contactNumber = document.getElementById("contactNumber").value;
+  var contactNumberPattern = /^[1-9][0-9]{9}$/; // Pattern to match 10-digit phone number
+  
+  if (contactNumberPattern.test(contactNumber)) {
+    return true; // Submit the form
+  } else {
+    return false; // Prevent form submission
+  }
+}
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  if (form.checkValidity()) {
+  const isValidContactNumber = validateForm();
+  if (form.checkValidity() && isValidContactNumber) {
     // All required fields are filled in correctly, you can proceed with form submission
-    alert("Form submitted successfully!");
+    alert("complaint has been successfully raised!");
     form.reset();
     submitButton.setAttribute("disabled", "true");
   } else {
-    alert("Please fill in all required fields correctly.");
+    if(!isValidContactNumber) {
+      alert("Please enter a valid 10-digit phone number.");
+    } else {
+      alert("Please fill in all required fields correctly.");
+    }
   }
 });
 
