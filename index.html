@@ -41,133 +41,135 @@
     </div>
     <div class="tabContent">
       <div id="home" class="tabContentDetails">
-       <div style="text-align: center;">
-        <div class="homebackground">
-          <img src="./Assets/home  image.jpg" alt="">
+        <div style="text-align: center;">
+          <div class="homebackground">
+            <img src="./Assets/home  image.jpg" alt="">
           </div>
           <div class="contactUsText">
             Worried about your waste left at home? <br>
             We are just a step away from your home to collect waste at minimal cost.<br>
-             Book your convenient time now!!<br>
-             <button onclick="openTab('bookings')" style="background: transparent;">Book Now</button>
-          </div>
+            Book your convenient time now!!<br>
+            <button onclick="openTab('bookings')" style="background: transparent;">Book Now</button>
           </div>
         </div>
       </div>
       <div id="bookings" class="tabContentDetails">
-       <div class="displayFlexSpaceBetween">
-        <div style="width: 500px;">
-          <div class="bookingsHeading">
-            BOOKINGS
-          </div>
-          <div class="name displayGrid">
-            NAME:
-            <input type="text"  id="inputName" placeholder="Enter your name" onchange="checkSubmitButtonStatus()" style="width: 200px;">
-          </div>
-          <div class="date displayGrid">
-            DATE:
-            <input type="date" id="inputDate" placeholder="select" onchange="checkSubmitButtonStatus()">
-          </div>
-          <div class="time displayGrid">
-            TIME:
-            <input type="time" id="inputTime" onchange="validateTime(this.value)" id="timeInput">
-          </div>
-          <div class="address displayGrid">
-            PLACE WITH DETAILED ADDRESS:
-            <textarea id="w3review" name="w3review" rows="4" placeholder="Enter your address" onchange="checkSubmitButtonStatus()"></textarea>
-          </div>
-          <div class="number displayGrid">
-            PHONE NUMBER:
-            <input type="text" id="inputNumber" placeholder="Enter your phone number" maxlength="10" onchange="checkSubmitButtonStatus()" style="width: 200px;">
-          </div>
-          <div class="wasteType displayFlexSpaceBetween">
-            SELECT TYPE OF WASTE:
-            <label for="1">
-              WET
-              <input type="checkbox" value="wet" name="type" id="1">
-            </label>
-            <label for="2">
-              DRY
-              <input type="checkbox" value="dry" name="type" id="2">
-            </label>
-            <label for="3">
-              BOTH
-              <input type="checkbox" value="both" name="type" id="3">
-            </label>
-          </div>
-          <div class="weight displayGrid" id="wetWeight">
-            APPROX WEIGHT(wet waste in kgs):
-            <input type="number" placeholder="Enter weight in Kgs" id="wetWasteKg" onchange="checkSubmitButtonStatus()">
-          </div>
-          <div class="weight displayGrid" id="dryWeight">
-            APPROX WEIGHT(dry waste in kgs):
-            <input type="number" placeholder="Enter weight in Kgs" id="dryWasteKg" onchange="checkSubmitButtonStatus()">
-          </div>
-          <div id="totalCostDiv" class="weight">
-            TOTAL COST
-            <!-- Button to Open the Modal -->
-            <i class="fa fa-info-circle" data-bs-toggle="modal" data-bs-target="#myModal"></i> :
-            <div id="totalCost"></div>
-          </div>
-          <!-- The Modal -->
-          <div class="modal" id="myModal">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <!-- Modal Header -->
-                <div class="modal-header">
-                  <h4 class="modal-title">Price List</h4>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-
-                <!-- Modal body -->
-                <div class="modal-body costModalBody">
-                  <ul>
-                    Wet waste
-                    <div class="costSpace">
-                      <li>0-1kg:INR 25</li>
-                      <li>1kg-2kg:INR 35</li>
-                      <li>2kg-3kg:INR 45</li>
-                      <li>3kg-4kg:INR 55</li>
-                    </div>
-                  </ul>
-                  <ul>
-                    Dry waste
-                    <div class="costSpace">
-                      <li>0-2KG:INR 30</li>
-                      <li>2kg-4kg:INR 50</li>
-                    </div>
-                  </ul>
-                </div>
-                <div class="costFooter">
-                  <div>
-                    <span>NOTE:</span>
+        <div class="displayFlexSpaceBetween">
+          <div style="width: 500px;">
+            <div class="bookingsHeading">
+              BOOKINGS
+            </div>
+            <div class="name displayGrid">
+              NAME:
+              <input type="text" id="inputName" placeholder="Enter your name" onchange="checkSubmitButtonStatus()"
+                style="width: 200px;">
+            </div>
+            <div class="date displayGrid">
+              DATE:
+              <input type="date" id="inputDate" placeholder="select" onchange="checkSubmitButtonStatus()">
+            </div>
+            <div class="time displayGrid">
+              TIME:
+              <input type="time" id="inputTime" onchange="validateTime(this.value)" id="timeInput">
+            </div>
+            <div class="address displayGrid">
+              PLACE WITH DETAILED ADDRESS:
+              <textarea id="w3review" name="w3review" rows="4" placeholder="Enter your address"
+                onchange="checkSubmitButtonStatus()"></textarea>
+            </div>
+            <div class="number displayGrid">
+              PHONE NUMBER:
+              <input type="text" id="inputNumber" placeholder="Enter your phone number" maxlength="10"
+                onchange="checkSubmitButtonStatus()" style="width: 200px;">
+            </div>
+            <div class="wasteType displayFlexSpaceBetween">
+              SELECT TYPE OF WASTE:
+              <label for="1">
+                WET
+                <input type="checkbox" value="wet" name="type" id="1">
+              </label>
+              <label for="2">
+                DRY
+                <input type="checkbox" value="dry" name="type" id="2">
+              </label>
+              <label for="3">
+                BOTH
+                <input type="checkbox" value="both" name="type" id="3">
+              </label>
+            </div>
+            <div class="weight displayGrid" id="wetWeight">
+              APPROX WEIGHT(wet waste in kgs):
+              <input type="number" placeholder="Enter weight in Kgs" id="wetWasteKg" onchange="checkSubmitButtonStatus()">
+            </div>
+            <div class="weight displayGrid" id="dryWeight">
+              APPROX WEIGHT(dry waste in kgs):
+              <input type="number" placeholder="Enter weight in Kgs" id="dryWasteKg" onchange="checkSubmitButtonStatus()">
+            </div>
+            <div id="totalCostDiv" class="weight">
+              TOTAL COST
+              <!-- Button to Open the Modal -->
+              <i class="fa fa-info-circle" data-bs-toggle="modal" data-bs-target="#myModal"></i> :
+              <div id="totalCost"></div>
+            </div>
+            <!-- The Modal -->
+            <div class="modal" id="myModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Price List</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                   </div>
-                  <ul>
-                    <li>
-                      For Wet waste, above 4kgs, additional 15 Rupees for KG will be charged.
-                    </li>
-                    <li>
-                      For Dry waste, Above 4kgs, additional 10 Rupees for KG will be charged.
-                    </li>
-                  </ul>
+  
+                  <!-- Modal body -->
+                  <div class="modal-body costModalBody">
+                    <ul>
+                      Wet waste
+                      <div class="costSpace">
+                        <li>0-1kg:INR 25</li>
+                        <li>1kg-2kg:INR 35</li>
+                        <li>2kg-3kg:INR 45</li>
+                        <li>3kg-4kg:INR 55</li>
+                      </div>
+                    </ul>
+                    <ul>
+                      Dry waste
+                      <div class="costSpace">
+                        <li>0-2KG:INR 30</li>
+                        <li>2kg-4kg:INR 50</li>
+                      </div>
+                    </ul>
+                  </div>
+                  <div class="costFooter">
+                    <div>
+                      <span>NOTE:</span>
+                    </div>
+                    <ul>
+                      <li>
+                        For Wet waste, above 4kgs, additional 15 Rupees for KG will be charged.
+                      </li>
+                      <li>
+                        For Dry waste, Above 4kgs, additional 10 Rupees for KG will be charged.
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <br>
-
-          <br>
-          <div class="buttons">
-            
+            <br>
+  
+            <br>
+            <div class="buttons">
+  
               <input type="button" value="RESET" id="resetButton">
               <button onclick="window.location.href = 'success.html';" id="bookingSubmit" disabled>SUBMIT</button>
-          </div> 
-          
+            </div>
+  
+          </div>
+          <div>
+            <img src="./Assets/booking.jpg" alt="" class="bookingImage">
+          </div>
         </div>
-        <div>
-          <img src="./Assets/booking.jpg" alt="" class="bookingImage"> 
-        </div>
-       </div>
       </div>
       <div id="myRequests" class="tabContentDetails">
         <h1>Check Status <span>of Booking</span></h1>
@@ -176,10 +178,10 @@
           <button onclick="bookingsSearch()">Search</button>
           <button onclick="bookingsSearchReset()">Reset</button>
         </div>
-       
+  
         <br>
         <div class="process-wrapper" id="bookingSearchDetails">
-          
+  
           <div id="progress-bar-container">
             <ul>
               <li class="step step01 active">
@@ -207,22 +209,22 @@
           <br>
           <div>
             <label class="labelGroup" for="Name">Name: </label>
-              <input type="text" placeholder="Name" required>
+            <input type="text" placeholder="Name" required>
           </div>
           <br>
           <div>
-          <label class="labelGroup" for="Contact number">Contact number: (+91)</label>
+            <label class="labelGroup" for="Contact number">Contact number: (+91)</label>
             <input type="text" id="contactNumber" placeholder="Contact number" maxlength="10" required>
           </div>
           <br>
           <div>
             <label class="labelGroup" for="EmailId">Email Id: </label>
-              <input type="text" placeholder="Email Id" required>
+            <input type="text" placeholder="Email Id" required>
           </div>
           <br>
           <label class="labelGroup" for="Issue:">Issue: </label>
           <br>
-            <textarea  id="1" placeholder="Please enter the issue here" rows="10" cols="80" required></textarea>
+          <textarea id="1" placeholder="Please enter the issue here" rows="10" cols="80" required></textarea>
           <br>
           <br>
           <button type="submit" id="submitButton" disabled>
@@ -232,51 +234,55 @@
           <br><br>
           <div>
             <p>For futher assistance, reach out to us at
-              <a href = "mailto: customercare@greenhaulers.com">customercare@greenhaulers.com</a>
+              <a href="mailto: customercare@greenhaulers.com">customercare@greenhaulers.com</a>
             </p>
           </div>
-        </form>    
+        </form>
       </div>
       <div id="aboutUs" class="tabContentDetails">
         <div class="about">
-        <h1>ABOUT US</h1>
-        <p>"CLEAN EARTH IS A GREEN EARTH"
-          Welcome to <br>
-          We the team ,are striving towards cleaner Earth through waste management<br>
-
-          keeping the surrounding (house,offfice,educational institutes) clean is the first step towards clean
-          Earth <br>
-          The implementation of waste collection services from residential properties is a significant initiative aimed at promoting<br>
-           environmental sustainability and waste management. <br>
-           This program seeks to encourage responsible waste disposal practices among households, thereby reducing the negative <br>
-           impact of waste on the environment.<br>
-           The introduction of this service is a crucial step towards achieving a cleaner and healthier living environment for all.<br>
-          <br>
-          INFORMATION<br>
-          <br>
-          We the team are really thankful for xyz project to take intiative to collabrat with us.<br>
-          They help us to convert the the degradable waste into manure and make the soil fertile<br>
-           which leads to GREEN PLANET<br>
-           <br>
-          SUPPORT US<br>
-          If you are intrested in our project you can donate contribution to us<br>
-          hich will help us.<br>
-          Every contribution of your will help us to become stronger.<br>
-          
-           </p>
-      </div>
+          <h1>ABOUT US</h1>
+          <p>"CLEAN EARTH IS A GREEN EARTH"
+            Welcome to <br>
+            We the team ,are striving towards cleaner Earth through waste management<br>
+  
+            keeping the surrounding (house,offfice,educational institutes) clean is the first step towards clean
+            Earth <br>
+            The implementation of waste collection services from residential properties is a significant initiative aimed
+            at promoting<br>
+            environmental sustainability and waste management. <br>
+            This program seeks to encourage responsible waste disposal practices among households, thereby reducing the
+            negative <br>
+            impact of waste on the environment.<br>
+            The introduction of this service is a crucial step towards achieving a cleaner and healthier living
+            environment for all.<br>
+            <br>
+            INFORMATION<br>
+            <br>
+            We the team are really thankful for xyz project to take intiative to collabrat with us.<br>
+            They help us to convert the the degradable waste into manure and make the soil fertile<br>
+            which leads to GREEN PLANET<br>
+            <br>
+            SUPPORT US<br>
+            If you are intrested in our project you can donate contribution to us<br>
+            hich will help us.<br>
+            Every contribution of your will help us to become stronger.<br>
+  
+          </p>
+        </div>
       </div>
       <div id="contactUs" class="tabContentDetails">
-       <div style="text-align: center;">
-         <img src="./Assets/contactUs.png" alt="" class="contactUsLogo"> 
-        <div class="contactUsText">
-          Please Contact us at our toll free number 080-123456789. 
-          Our working hours are 6AM to 8PM.
+        <div style="text-align: center;">
+          <img src="./Assets/contactUs.png" alt="" class="contactUsLogo">
+          <div class="contactUsText">
+            Please Contact us at our toll free number 080-123456789.
+            Our working hours are 6AM to 8PM.
+          </div>
+  
         </div>
-        
-       </div>
       </div>
     </div>
+  
   </div>
 </body>
 <script src="index.js"></script>
