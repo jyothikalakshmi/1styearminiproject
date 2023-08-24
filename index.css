@@ -1,16 +1,26 @@
+*{
+  color:rgb(59, 20, 20);
+  /* font-weight: bolder; */
+}
 body {
   margin: 0px;
-  background: linear-gradient(90deg, rgb(173, 253, 162) 0%, rgb(17, 211, 243) 100%);
+  /*background: linear-gradient(90deg, rgb(173, 253, 162) 0%, rgb(17, 211, 243) 100%);*/
 }
 
 .title {
+  padding-top: 18px;
   height: 130px;
   width: 100%;
   text-align: center;
-  color: black;
+  color: rgb(59, 20, 20);
   position: fixed;
-  font-size: 60px;
-  background: linear-gradient(15deg, #13547a, #80d0c7);
+  font-size: 45px;
+  font-weight: bolder;
+  background: linear-gradient(180deg, #82A67D,#c2c5c2 );;
+  /* background: linear-gradient(180deg, #9ce247, #daf581fa); */
+  /*background-color: white;
+  background: linear-gradient(15deg, #13547a, #80d0c7);*/
+
   z-index: 1;
 }
 
@@ -19,30 +29,46 @@ body {
   left: 60%;
   font-size: 30px;
 }
+/* .homebackground{
+  background-image: url('https://t3.ftcdn.net/jpg/05/78/65/98/360_F_578659816_v2ZJMwlpFisEE66gWt6h3POodHeLYseI.jpg');
+ background-size: 100% 100%;
+ background-repeat: no-repeat;
+ background-position: center center;
+ } */
 
 .content {
   padding-top: 130px;
-  width: 100%;
-    height: 100vh; /* Adjust the height as needed */
-    background: linear-gradient(rgb(247, 247, 134),rgb(245, 240, 240));
+  background-color: white;
+ background:linear-gradient(rgb(247,247,134),rgb(245,240,240)) ;
+ /* background: linear-gradient(90deg, rgb(173, 253, 162) 0%, rgb(17, 211, 243) 100%);
+ background-image: url('https://t3.ftcdn.net/jpg/05/78/65/98/360_F_578659816_v2ZJMwlpFisEE66gWt6h3POodHeLYseI.jpg');
+ background-size: 100vw 100vh;
+ background-repeat: no-repeat;
+ background-position: center center; */
+ height:100vh;
+ width:100%;
 }
 
 .tabs {
   display: flex;
   flex-direction: column;
   width: 10%;
-  background: linear-gradient(180deg, #ff4328, #bc0557);
+  
+  /* background: linear-gradient(180deg, #9ce247, #daf581fa); */
+  background: linear-gradient(180deg, #82A67D,#c2c5c2 );
 }
 
 .tabcontent {
   position: absolute;
   left: 10%;
   top: 130px;
+  
 }
 
 .tabContentDetails {
   width: 150%;
   padding: 64px;
+  color:rgb(59, 20, 20);
 }
 
 
@@ -61,7 +87,7 @@ body {
 }
 
 .name {
-  color: brown;
+  color: rgb(59, 20, 20);
   padding-top: 10px;
 
 }
@@ -76,36 +102,36 @@ body {
 }
 
 .date {
-  color: brown;
+  color:rgb(59, 20, 20);
   padding-top: 20px;
   width: fit-content;
 }
 
 .time {
-  color: brown;
+  color:rgb(59, 20, 20);
   padding-top: 20px;
   width: fit-content;
 }
 
 .address {
-  color: brown;
+  color: rgb(59, 20, 20);
   padding-top: 20px;
 }
 
 .number {
-  color: brown;
+  color: rgb(59, 20, 20);
   padding-top: 20px;
 
 }
 
 .wasteType {
-  color: brown;
+  color: rgb(59, 20, 20);
   padding-top: 20px;
 
 }
 
 .weight {
-  color: brown;
+  color: rgb(59, 20, 20);
   padding-top: 40px;
 }
 
@@ -370,7 +396,8 @@ h1 span {
 .about {
   font-size: 22px;
   font-style: initial;
-}
+  color:rgb(59, 20, 20);
+ }
 
 .bookingImage {
   height: 70vh;
