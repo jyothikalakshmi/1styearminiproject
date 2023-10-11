@@ -13,16 +13,7 @@ function openTab(id) {
   document.getElementById(id).style.display = "block";
 
 }
-function myFunction() {
-  // Get the SUBMIT DIV
-  var x = document.getElementById("SUBMIT");
 
-  // Add the "show" class to DIV
-  x.className = "show";
-
-  // After 3 seconds, remove the show class from DIV
-  setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
-}
 const wetCheckbox = document.getElementById('1');
 const dryCheckbox = document.getElementById('2');
 const bothCheckbox = document.getElementById('3');
